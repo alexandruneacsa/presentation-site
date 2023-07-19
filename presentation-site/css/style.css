@@ -1,0 +1,378 @@
+@font-face {
+	font-family: 'Futura PT light';
+	src: url("../font/FuturaPTLight.otf");
+}
+@font-face {
+	font-family: 'Futura PT medium';
+	src: url("../font/FuturaPTMedium.otf");
+}
+@font-face {
+	font-family: 'Futura PT bold';
+	src: url("../font/FuturaPTBold.otf");
+}
+@font-face {
+	font-family: 'Futura PT book';
+	src: url("../font/FuturaPTBook.otf");
+}
+@font-face {
+	font-family: 'Futura PT Heavy';
+	src: url("../font/FuturaPTHeavy.otf");
+}
+
+
+/* Global style begins here */
+body {
+	font-family: 'Futura PT medium';
+	font-size: 16px;
+	line-height: 1.5;
+}
+/* Reset style */
+* {
+	margin: 0;
+	padding: 0;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+/* Global style ends here */
+
+
+/* Banner style begins here */
+#Banner .logo {
+  position: absolute;
+  top: 25%;
+  left: 16%;
+  opacity: 0;
+  font-size:100px;
+}
+#Banner {
+	width: 0;
+	height: 100vh;
+	
+	background: #e64741; /* Old browsers */
+	background: -moz-linear-gradient(top, #e64741 0%, #e6255d 100%, #7db9e8 100%);
+	background: -webkit-linear-gradient(top, #e64741 0%,#e6255d 100%,#7db9e8 100%); 
+	background: linear-gradient(to bottom, #e64741 0%,#e6255d 100%,#7db9e8 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64741', endColorstr='#7db9e8',GradientType=0 );
+	overflow: hidden;
+	position: relative;
+}
+body.active #Banner .logo {
+	opacity: 1;
+	top: 47%;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+	-ms-transition-delay: 0.5s;
+}
+body.active #Banner  {
+	width: 100%;
+	transition:  ease-in-out all 0.5s;
+}
+body.active #Banner .blacksection::before  {
+	height: 2000px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition-delay: 1s;
+	transition-delay: 1s;
+	-ms-transition-delay: 1s;
+}
+body.active #Banner h1  {
+	opacity: 1;
+	right: 15%;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition-delay: 1.5s;
+	transition-delay: 1.5s;
+	-ms-transition-delay: 1.5s;
+}
+#Banner h1 {
+	color: #fff;
+	font-size: 80px;
+	font-family: 'Futura PT book';
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  opacity: 0;
+}
+#Banner .blacksection::before {
+  width: 2000px;
+  height: 0;
+  background-color: #000;
+  position: absolute;
+  right: -1000px;
+  transform: rotate(124deg);
+  -ms-transform: rotate(124deg);
+  content: "";
+  top: 0;
+}
+.mscroll {
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+}
+body.active .mscroll {
+	opacity: 1;
+	bottom: 14%;
+	left: 50%;
+	transition: all 0.5s;
+	-webkit-transition-delay: 1.5s;
+	transition-delay: 1.75s;
+	-ms-transition-delay: 1.75s;
+}
+.mobile-header, .mobile-logo {
+	display: none;
+}
+
+.mobile-header img {
+	width: 100%;
+	height: auto;
+}
+#sidebar-wrapper {
+	top: 0;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  transform: translateX(250px);
+  background: #333f4f;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebar-nav {
+	position: absolute;
+	margin: 0;
+	padding: 0 20px 0 0;
+	list-style: none;
+	text-align: right;
+	width: 100%;
+	top: 5%;
+}
+#sidebar-wrapper .sidebar-nav li.sidebar-nav-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  line-height: 200%;
+}
+#sidebar-wrapper .sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #e6275c;
+  transition: all 0.3s;
+}
+#sidebar-wrapper .sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+  text-decoration: none;
+  color: #e6275c;
+  transition: all 0.3s;
+}
+#sidebar-wrapper .sidebar-nav>.sidebar-brand {
+  font-size: 20px;
+  height: 80px;
+  line-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+#sidebar-wrapper .sidebar-nav>.sidebar-brand a {
+  color: #fff;
+}
+#sidebar-wrapper .sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.menu-toggle {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  padding: 4px 10px;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  z-index: 999;
+  width: 56px;
+  height: 50px;
+  line-height: 51px;
+}
+.menu-toggle i {
+	font-size: 30px;
+	line-height: 40px;
+}
+.menu-toggle:focus, .menu-toggle:hover {
+  color: #fff;
+}
+.menu-toggle:hover, .menu-toggle.active {
+  background: #e6275c;
+}
+/* Banner style ends here */
+
+
+/* Our Digital services style begins here */
+#Informatii {
+	padding: 60px 0 90px 0;
+	text-align: center;
+}
+#Informatii h2 {
+	color: #000;
+	font: 68px/125% 'Futura PT book';
+	margin-bottom: 90px;
+}
+/* Our Digital services style ends here */
+
+
+/* Our work begin */
+#Munca{
+  background-color: #414143;
+  padding: 60px 0;
+} 
+#Munca h2 {
+	color: #fff;
+	text-align: center;
+	font: 68px/125% 'Futura PT book';
+	margin-bottom: 40px;
+}
+/* Our work end */
+
+
+/* Our blog begin */
+#Blog {
+	padding: 60px 0;
+	background-color: #ececec;
+}
+#Blog h2 {
+	color: #000;
+	font: 68px/125% 'Futura PT book';
+	margin-bottom: 20px;
+	text-align: center;
+}
+#Blog p {
+	color: #000;
+	font: 18px/125% 'Futura PT book';
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/* Our blog end */
+
+
+/* Testimonials style begins here */
+#Feedback {
+	padding: 60px 0 90px 0;
+}
+#Feedback h2 {
+	color: #000;
+	font: 68px/125% 'Futura PT book';
+	margin-bottom: 20px;
+	text-align: center;
+}
+#Feedback p {
+	color: #000;
+	font: 18px/125% 'Futura PT book';
+	margin-bottom: 20px;
+	text-align: center;
+}
+/* Testimonials style ends here */
+
+
+/* Footer */
+#Contact {
+	text-align: center;
+	padding: 70px 0 50px 0;
+	background-color: #333f4f;
+}
+#Contact p {
+    color: #c7c5ca;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+#Contact a.email-btn {
+    color: #fff;
+    background-color: #f46674;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 28px;
+    width: 240px;
+}
+#Contact a.email-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#Contact a.email-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#Contact a.email-btn:hover span {
+  padding-right: 25px;
+}
+
+#Contact a.email-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#Contact a i {
+	margin-right: 14px;
+}
+.social-icons {
+  margin-top: 50px;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0 16px;
+} 
+.social-icons li a {
+	display: block;
+}
+.social-icons li i {
+  color: #c3c3cb;
+  font-size: 34px;
+  transition: all 0.3s;
+}
+.social-icons li i:hover {
+  transform: scale(1.3);
+}
+.copyright {
+	background-color: #03060c;
+	padding: 26px 0;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+}
+.copyright p {
+	margin-bottom: 0;
+}
+/* Footer */
