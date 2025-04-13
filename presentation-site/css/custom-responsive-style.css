@@ -1,250 +1,315 @@
 @media only screen and (max-width: 767px) {
-	#Banner .blacksection::before {
-		display: none;
-	}
-	#Banner {
-		width: 100%;
-	}
-	header {
-		background: #e64741; /* Old browsers */
-		position: fixed;
-		width: 100%;
-		padding: 20px;
-		z-index: 99999;
-	}
-	header .mobile-logo {
-		display: block;
-		width: 60px;
-	}
-	#Banner .logo {
-		display: none;
-	}
-	.mobile-logo img {
-		width: 100%;
-		height: auto;
-	}
-	#Banner h1 {
-		font-size: 40px;
-		right: auto;
-		top: 50%;
-		transform: translate(-50%,-50%);
-		opacity: 1;
-		left: 50%;
-		text-align: left;
-	}
-	.mobile-header {
-		display: block;
-	}
-	#Informatii {
-		padding: 30px 0;
-	}
-	#Informatii h2 {
-	    font-size: 38px;
-	    margin-bottom: 30px;
-	}
-	#Informatii .each-services img {
-		padding-bottom: 10px;
-	}
-	.each-services {
-	    margin-bottom: 40px;
-	}
-	#Munca h2, #TestimonialsSlider h2 {
-		font-size: 38px;
-	}
-	#Munca .grey-box {
-		margin-bottom: 30px;
-	}
-	#Munca .each-work {
-		padding: 0 7px 10px;
-		width: 127px;
-		height: 120px;
-	}
-	#Munca .each-work img {
-		width: 100%;
-		height: auto;
-	}
-	#Studii h2 {
-		font-size: 38px;
-	}
-	#Studii {
-	    padding: 60px 0;
-	} 
-	.each-block {
-	    position: static;
-	    width: auto;
-	    padding: 0 0;
-	    margin-bottom: 25px;
-	    display: inline-block;
-	}
-	.studii-wrap {
-		margin: 40px 0;
-	}
-	#FeedbackSlider {
-		padding: 40px 0;
-	}
-	.testimonials-dtl p {
-	    width: auto;
-	    padding: 0 20px;
-	}
-	.testimonials-dtl h5 {
-		padding-top: 20px;
-	}
-	#Footer p {
-		font-size: 34px;
-	}
-	.social-icons li i {
-	    font-size: 26px;
-	}
-	.studii-wrap {
-		height: auto;
-	}
-	#Studii .each-block {
-		width: 100%;
-	}
-	#Studii .studii-wrap::before, #Studii .each-block::before {
-		display: none;
-	}
-	#Studii .studii-wrap .studii-intro {
-		width: 75%;
-	}
-	#Feedback {
-		padding-bottom: 30px;
-	}
-	#Feedback span {
-		font-size: 50px;
-	}
-	#Feedback h2 {
-		font-size: 40px;
-	}
-	#Feedback .title {
-		width: 70%;
-	}
-	#Feedback .testi-wrapper {
-		margin-top: 50px;
-	}
-	#Feedback .testi-wrapper .latest-testimonials {
-		margin-right: 0;
-	}
-	#Feedback .testi-wrapper .each-testi {
-		width: 100%;
-	}
-	#Feedback .testi-wrapper .old-testimonials {
-		margin: 0 0 30px 0;
-		height: auto;
-	}
-	#Feedback.each-testi .profile {
-		position: static;
-	}
-	.social-icons li {
-		margin: 0 8px;
-	}
-} 
+    #Banner .blacksection::before {
+        display: none;
+    }
+
+    #Banner {
+        width: 100%;
+    }
+
+    header {
+        background: #e64741;
+        position: fixed;
+        width: 100%;
+        padding: 20px;
+        z-index: 99999;
+    }
+
+    header .mobile-logo {
+        display: block;
+        width: 60px;
+    }
+
+    #Banner .logo {
+        display: none;
+    }
+
+    .mobile-logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    #Banner h1 {
+        font-size: 40px;
+        right: auto;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        left: 50%;
+        text-align: left;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+    #Informatii {
+        padding: 30px 0;
+    }
+
+    #Informatii h2 {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+
+    #Informatii .each-services img {
+        padding-bottom: 10px;
+    }
+
+    .each-services {
+        margin-bottom: 40px;
+    }
+
+    #Munca h2, #TestimonialsSlider h2 {
+        font-size: 38px;
+    }
+
+    #Munca .grey-box {
+        margin-bottom: 30px;
+    }
+
+    #Munca .each-work {
+        padding: 0 7px 10px;
+        width: 127px;
+        height: 120px;
+    }
+
+    #Munca .each-work img {
+        width: 100%;
+        height: auto;
+    }
+
+    #Studii h2 {
+        font-size: 38px;
+    }
+
+    #Studii {
+        padding: 60px 0;
+    }
+
+    .each-block {
+        position: static;
+        width: auto;
+        padding: 0 0;
+        margin-bottom: 25px;
+        display: inline-block;
+    }
+
+    .studii-wrap {
+        margin: 40px 0;
+    }
+
+    #FeedbackSlider {
+        padding: 40px 0;
+    }
+
+    .testimonials-dtl p {
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .testimonials-dtl h5 {
+        padding-top: 20px;
+    }
+
+    #Footer p {
+        font-size: 34px;
+    }
+
+    .social-icons li i {
+        font-size: 26px;
+    }
+
+    .studii-wrap {
+        height: auto;
+    }
+
+    #Studii .each-block {
+        width: 100%;
+    }
+
+    #Studii .studii-wrap::before, #Studii .each-block::before {
+        display: none;
+    }
+
+    #Studii .studii-wrap .studii-intro {
+        width: 75%;
+    }
+
+    #Feedback {
+        padding-bottom: 30px;
+    }
+
+    #Feedback span {
+        font-size: 50px;
+    }
+
+    #Feedback h2 {
+        font-size: 40px;
+    }
+
+    #Feedback .title {
+        width: 70%;
+    }
+
+    #Feedback .testi-wrapper {
+        margin-top: 50px;
+    }
+
+    #Feedback .testi-wrapper .latest-testimonials {
+        margin-right: 0;
+    }
+
+    #Feedback .testi-wrapper .each-testi {
+        width: 100%;
+    }
+
+    #Feedback .testi-wrapper .old-testimonials {
+        margin: 0 0 30px 0;
+        height: auto;
+    }
+
+    #Feedback.each-testi .profile {
+        position: static;
+    }
+
+    .social-icons li {
+        margin: 0 8px;
+    }
+}
 
 
-@media screen and (min-width: 768px) and (max-width: 991px){
-	#Banner {
-		width: 100%;
-		height: 60vh;
-	}
-	header {
-		background: #e64741; /* Old browsers */
-		position: fixed;
-		width: 100%;
-		padding: 20px;
-		z-index: 99999;
-	}
-	header .mobile-logo {
-		display: block;
-		width: 60px;
-	}
-	#Banner .logo {
-		display: none;
-	}
-	.mobile-logo img {
-		width: 100%;
-		height: auto;
-	}
-	#Banner h1 {
-		right: 16%;
-		opacity: 1;
-	}
-	#Studii .each-block::before , #Studii .studii-wrap::before {
-		display: none;
-	}
-	#Studii .each-block {
-		width: 100%;
-	}
-	#Informatii {
-	   padding: 30px 0; 
-	}
-	#Informatii h2 {
-		font-size: 40px;
-		margin-bottom: 30px;
-	}
-	#Informatii .each-services img {
-	    width: 58px;
-	    padding-bottom: 10px;
-	}
-	#Informatii .each-services h3 {
-		font-size: 22px;
-		min-height: 50px;
-	}
-	#Informatii .each-services p {
-		font-size: 16px;
-	}
-	#Banner .blacksection::before {
-	    right: 0;
-	    transform: rotate(50deg);
-	    top: 0;
-	}
-	#Munca h2, #FeedbackSlider h2, #Studii h2 {
-		font-size: 38px;
-	}
-	#Munca .each-work {
-		width: 151px;
-	}
-	.studii-wrap:before {
-		content: none;
-	}
-	#Footer p {
-		font-size: 30px;
-	}
-	.social-icons li i {
-		font-size: 36px;
-	}
-	#Feedback.testi-wrapper {
-		margin-top: 60px;
-	}
-	#FeedbackSlider {
-		font-size: 40px;
-	}
-	#Feedback .testi-wrapper .latest-testimonials {
-		margin-right: 0;
-		width: 100%;
-	}
-	#Feedback .testi-wrapper .old-testimonials {
-		width: 46%;
-	}
-} 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #Banner {
+        width: 100%;
+        height: 60vh;
+    }
+
+    header {
+        background: #e64741;
+        position: fixed;
+        width: 100%;
+        padding: 20px;
+        z-index: 99999;
+    }
+
+    header .mobile-logo {
+        display: block;
+        width: 60px;
+    }
+
+    #Banner .logo {
+        display: none;
+    }
+
+    .mobile-logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    #Banner h1 {
+        right: 16%;
+        opacity: 1;
+    }
+
+    #Studii .each-block::before, #Studii .studii-wrap::before {
+        display: none;
+    }
+
+    #Studii .each-block {
+        width: 100%;
+    }
+
+    #Informatii {
+        padding: 30px 0;
+    }
+
+    #Informatii h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    #Informatii .each-services img {
+        width: 58px;
+        padding-bottom: 10px;
+    }
+
+    #Informatii .each-services h3 {
+        font-size: 22px;
+        min-height: 50px;
+    }
+
+    #Informatii .each-services p {
+        font-size: 16px;
+    }
+
+    #Banner .blacksection::before {
+        right: 0;
+        transform: rotate(50deg);
+        top: 0;
+    }
+
+    #Munca h2, #FeedbackSlider h2, #Studii h2 {
+        font-size: 38px;
+    }
+
+    #Munca .each-work {
+        width: 151px;
+    }
+
+    .studii-wrap:before {
+        content: none;
+    }
+
+    #Footer p {
+        font-size: 30px;
+    }
+
+    .social-icons li i {
+        font-size: 36px;
+    }
+
+    #Feedback.testi-wrapper {
+        margin-top: 60px;
+    }
+
+    #FeedbackSlider {
+        font-size: 40px;
+    }
+
+    #Feedback .testi-wrapper .latest-testimonials {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #Feedback .testi-wrapper .old-testimonials {
+        width: 46%;
+    }
+}
 
 
-@media screen and (min-width: 992px) and (max-width: 1024px){
-	#Banner .blacksection::before {
-		width: 1200px;
-	}
-	#Banner h1 {
-		font-size: 60px;
-	}
-	#Munca .each-work {
-		width: 30.6%;
-	}
-	#Studii .each-block::before {
-		right: -53px;
-	}
-	#Studii .each-block.two::before {
-		left: -52px;
-	}
-	#Feedback .testi-wrapper .each-testi {
-		width: 31%;
-	}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    #Banner .blacksection::before {
+        width: 1200px;
+    }
+
+    #Banner h1 {
+        font-size: 60px;
+    }
+
+    #Munca .each-work {
+        width: 30.6%;
+    }
+
+    #Studii .each-block::before {
+        right: -53px;
+    }
+
+    #Studii .each-block.two::before {
+        left: -52px;
+    }
+
+    #Feedback .testi-wrapper .each-testi {
+        width: 31%;
+    }
 }
